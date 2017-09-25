@@ -17,7 +17,7 @@ class ButtonClick(implements=android.view.View[OnClickListener]):
 
 class MyApp:
     def __init__(self):
-        self._activity = None
+        self._activity = android.PythonActivity.setListener(self)
         self.message = 'click on button to change me'
         self.message_button = 'try me'
 
@@ -38,9 +38,6 @@ class MyApp:
 
         self._activity.setContentView(vlayout)
 
-    def link(self, activity):
-        self._activity = activity
-
     def update(self):
         if self.message == 'On':
             self.message = 'Off'
@@ -52,6 +49,4 @@ class MyApp:
         self.label.setText(self.message)
 
 def main():
-    app = MyApp()
-    activity = android.PythonActivity.setListener(app)
-    app.link(activity)
+    MyApp()
