@@ -1,31 +1,34 @@
 # FirstApp_VOC
 
-This is a native Android app written in Python, using the BeeWare suite.
+This is a native Android app written in Python, using the [BeeWare](http://pybee.org/) suite.
 
-The Python code is compiled to Java bytecode using VOC, and the Android APK is packaged using briefcase.
+The Python code is compiled to Java bytecode using [VOC](http://pybee.org/voc),
+and the Android APK is packaged using [briefcase](https://github.com/pybee/briefcase).
 
-Requirements
+**Requirements**
 
-JDK
-Android SDK
-How to run
+* JDK
+* Android SDK
 
-Ensure that you have Android SDK installed.
+## How to run
+
+Ensure that you have [Android SDK](https://developer.android.com/studio/index.html#downloads) installed.
 
 Install the Python development requirements:
 
-pip install -r requirements-dev.txt
-Plug in your Android device or start an emulator.
+    pip install -r requirements-dev.txt
+
+[Plug in your Android device](https://developer.android.com/training/basics/firstapp/running-app.html) or [start an emulator](https://developer.android.com/studio/run/emulator-commandline.html).
 
 Build and run the app:
 
-python setup.py android
-(cd android && ./gradlew run)
+    python setup.py android
+    (cd android && ./gradlew run)
 
 ![App screenshot](screenshot1.png)
 ![App screenshot](screenshot2.png)
 
-Thanks a lot to @eliasdorneles for helping me to use of BeeWare suite.
+**Thanks a lot to @eliasdorneles for helping me to use of BeeWare suite.**
 
 ## Want to know more?
 
